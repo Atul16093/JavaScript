@@ -58,6 +58,19 @@ console.log(typeof myNewArr);
 
 //slice() and splice() method  there are some difference between both method 
 //slice() method
+
+/*
+Purpose: Extracts a portion of an array without modifying the original array.
+Behavior: Returns a new array containing the selected elements based on the start and end indices.
+Original Array: Remains unchanged after using slice().
+
+Purpose: Removes or adds elements to an array at a specified position, modifying the original array.
+Behavior: Returns the removed elements while modifying the original array.
+Original Array: Changes after using splice(), as elements are removed or added.
+
+slice() gives you a copy of the array elements without altering the original array.
+splice() modifies the original array by removing (or adding) elements based on the specified range.*/
+
 console.log("Default array is : "+ myArr);
 
 let newArr = myArr;
@@ -69,7 +82,6 @@ console.log("slice method array : "+newArr);
 let newArr1 = myArr;
 console.log(newArr1.splice(1,4));
 console.log("splice method array : "+ newArr1);
-
 
 
 
