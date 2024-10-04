@@ -41,7 +41,7 @@ console.log( myArr);
 myArr.shift();
 console.log(myArr)
 
-//Some method for use for asking the question from the array like any value is exist in the array or not etc .
+//Some method  use for asking the question from the array like any value is exist in the array or not etc .
 
 console.log(myArr.includes(0));
 
