@@ -1,15 +1,16 @@
 /*
-some time global scope variable , can be change the vlaue of our function so 
- overcome this  problem , we use iffe concept */
+IIFE (Immediately Invoked Function Expression) to Manage Global Scope Variables
+Global variables can be accidentally modified by functions, leading to unexpected behavior.
+IIFE provides a solution by creating a local scope, preventing global variables from being affected. */
 
  (function f1(){
     console.log("DB connected");
     
- }) ()
- let a = 10
+ }) ();
 //  we need to end the line why the help of semi colon 
 //  Here the first paranteses is our function and the second paranteses is calling the function 
-// ( () => {
-//     console.log("DB Connected again");
+//Also we use iife with arrow function 
+( () => {
+    console.log("DB Connected again");
     
-// })();
+})();
